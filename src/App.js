@@ -1,3 +1,7 @@
+/*
+author: nipunchawla
+*/
+
 import React from "react";
 import "./App.css";
 import Row from "./Row";
@@ -11,13 +15,13 @@ function App() {
       <Row
         title="Netflix Orignals"
         fetchUrl={requests.fetchNetflixOrignals}
-        isLargeRow
+        isLargeRow={true}// default: true
       />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Horrror Movies" fetchUrl={requests.fetchHorrorMoviews} />
+      <Row title="Horrror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
     </div>
   );

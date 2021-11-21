@@ -17,7 +17,7 @@
   object-fit: contain;
   width: 100%;
   max-height: 100px;
-  margin-right: 10 px;
+  margin-right: 10px;
   transition: transform 450ms;
 }
 
@@ -25,8 +25,8 @@
   transform: scale(1.08);
 }
 
-.row__posterLarge {
-  max-width: 250px;
+.row_posterLarge {
+  max-width: 350px;
 }
 
 .row_posterLarge:hover {

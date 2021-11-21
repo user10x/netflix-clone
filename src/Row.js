@@ -1,3 +1,6 @@
+/*
+author: nipunchawla
+*/
 import React, { useState, useEffect } from "react";
 import axios from "./axios"; // rename default to an alias
 import "./Row.css";
@@ -21,14 +24,12 @@ function Row({ title, fetchUrl, isLargeRow }) {
     <div className="row">
       <h2>{title}</h2>
       <div className="row_posters">
-        {/*several row poster(s)*/}
-
         {movies.map((movie) => (
           <img
             key={movies.id}
-            className={`row_poster ${isLargeRow && "row__posterLarge"}`}
+            className={`row_poster ${isLargeRow && "row_posterLarge"}`}
             src={`${base_url}${
-              isLargeRow ? movie.poster_path : movie.backdrop_path
+              !isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
             alt={movie.name}
           />
