@@ -24,3 +24,15 @@ yarn-error.log*
 
 #mac
 .idea/*
+
+
+package-lock.json
+yarn.lock
+
+#bazel
+BUILD.bazel.swp
+bazel-bin*
+bazel-out*
+
+
+
