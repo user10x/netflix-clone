@@ -1,0 +1,8 @@
+load("@npm_deps//http-server:index.bzl", "http_server")
+http_server(
+    name = "server",
+    #data = [":app"],
+    data = [
+        "*.js",
+    ],
+)
